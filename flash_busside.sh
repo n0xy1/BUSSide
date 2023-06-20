@@ -7,4 +7,4 @@ fi
 USBDEVICE=$1
 FIRMWARE=FirmwareImages/BUSSide-16-12-2019.bin
 
-esptool --port $USBDEVICE write_flash 0x00000 $FIRMWARE
+esptool.py --port $USBDEVICE write_flash 0x00000 $FIRMWARE
